@@ -39,6 +39,14 @@ export default function Dashboard({ setActiveTab }: DashboardProps) {
       premium: false
     },
     {
+      title: 'Vídeos de Exercícios',
+      description: 'Treine em casa com nossos vídeos exclusivos',
+      icon: TrendingUp,
+      color: 'from-orange-500 to-red-500',
+      action: () => setActiveTab('exercises'),
+      premium: true
+    },
+    {
       title: 'Calcular IMC',
       description: 'Verifique seu índice de massa corporal',
       icon: Calculator,

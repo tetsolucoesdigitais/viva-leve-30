@@ -26,6 +26,7 @@ export default function Sidebar({ activeTab, setActiveTab, isOpen, onClose }: Si
   const menuItems = [
     { id: 'dashboard', icon: Home, label: 'Dashboard', premium: false },
     { id: 'recipes', icon: BookOpen, label: 'Receitas', premium: false },
+    { id: 'exercises', icon: TrendingUp, label: 'Vídeos de Exercícios', premium: true },
     { id: 'bmi', icon: Calculator, label: 'Calculadora IMC', premium: false },
     { id: 'weight', icon: TrendingUp, label: 'Registro de Peso', premium: false },
     { id: 'achievements', icon: Award, label: 'Conquistas TAE', premium: false },

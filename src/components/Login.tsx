@@ -89,31 +89,50 @@ export default function Login() {
             </div>
           </div>
 
-          {/* Demo Accounts */}
-          <div className="bg-white p-4 rounded-lg shadow-sm border border-gray-100">
-            <p className="text-sm font-medium text-gray-700 mb-3">🚀 Contas de demonstração:</p>
-            <div className="space-y-2">
-              <button
-                onClick={() => quickLogin('admin@vivaleve.com', 'admin123')}
-                className="w-full text-left p-2 rounded bg-purple-50 hover:bg-purple-100 transition-colors"
-              >
-                <span className="text-sm font-medium text-purple-700">👑 Admin</span>
-                <span className="text-xs text-purple-600 ml-2">admin@vivaleve.com</span>
-              </button>
-              <button
-                onClick={() => quickLogin('maria@email.com', '123456')}
-                className="w-full text-left p-2 rounded bg-green-50 hover:bg-green-100 transition-colors"
-              >
-                <span className="text-sm font-medium text-green-700">⭐ Premium</span>
-                <span className="text-xs text-green-600 ml-2">maria@email.com</span>
-              </button>
-              <button
-                onClick={() => quickLogin('joao@email.com', '123456')}
-                className="w-full text-left p-2 rounded bg-gray-50 hover:bg-gray-100 transition-colors"
-              >
-                <span className="text-sm font-medium text-gray-700">🆓 Free</span>
-                <span className="text-xs text-gray-600 ml-2">joao@email.com</span>
-              </button>
+          {/* Plans Comparison */}
+          <div className="bg-white p-6 rounded-lg shadow-sm border border-gray-100">
+            <h3 className="text-lg font-semibold text-gray-800 mb-4 text-center">Escolha seu Plano</h3>
+            
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+              {/* Free Plan */}
+              <div className="border border-gray-200 rounded-lg p-4">
+                <div className="text-center mb-3">
+                  <h4 className="font-bold text-gray-800">Plano Free</h4>
+                  <p className="text-2xl font-bold text-gray-600">Grátis</p>
+                  <p className="text-sm text-gray-500">5 dias de acesso</p>
+                </div>
+                <ul className="text-sm text-gray-600 space-y-1">
+                  <li>✅ 10 receitas selecionadas</li>
+                  <li>✅ Calculadora de IMC</li>
+                  <li>✅ Registro de peso básico</li>
+                  <li>✅ Sistema TAE de conquistas</li>
+                  <li>❌ Vídeos de exercícios</li>
+                  <li>❌ Receitas premium</li>
+                </ul>
+              </div>
+
+              {/* Premium Plan */}
+              <div className="border-2 border-green-500 rounded-lg p-4 relative">
+                <div className="absolute -top-3 left-1/2 transform -translate-x-1/2">
+                  <span className="bg-green-500 text-white px-3 py-1 rounded-full text-xs font-bold">
+                    RECOMENDADO
+                  </span>
+                </div>
+                <div className="text-center mb-3">
+                  <h4 className="font-bold text-gray-800">Plano Premium</h4>
+                  <p className="text-2xl font-bold text-green-600">R$ 19,99</p>
+                  <p className="text-sm text-gray-500">30 dias de acesso</p>
+                </div>
+                <ul className="text-sm text-gray-600 space-y-1">
+                  <li>✅ 50+ receitas completas</li>
+                  <li>✅ Calculadora de IMC avançada</li>
+                  <li>✅ Gráficos de evolução</li>
+                  <li>✅ Sistema TAE completo</li>
+                  <li>✅ Vídeos de exercícios</li>
+                  <li>✅ Suporte nutricional</li>
+                  <li>✅ Atualizações semanais</li>
+                </ul>
+              </div>
             </div>
           </div>
         </div>

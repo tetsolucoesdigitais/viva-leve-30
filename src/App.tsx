@@ -5,6 +5,7 @@ import Header from './components/Header';
 import Sidebar from './components/Sidebar';
 import Dashboard from './components/Dashboard';
 import Recipes from './components/Recipes';
+import ExerciseVideos from './components/ExerciseVideos';
 import BMICalculator from './components/BMICalculator';
 import WeightTracker from './components/WeightTracker';
 import Achievements from './components/Achievements';
@@ -34,6 +35,7 @@ function AppContent() {
         <main className="flex-1 md:ml-64">
           {activeTab === 'dashboard' && <Dashboard setActiveTab={setActiveTab} />}
           {activeTab === 'recipes' && <Recipes />}
+          {activeTab === 'exercises' && <ExerciseVideos />}
           {activeTab === 'bmi' && <BMICalculator />}
           {activeTab === 'weight' && <WeightTracker />}
           {activeTab === 'achievements' && <Achievements />}
